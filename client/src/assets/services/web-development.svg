@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360" fill="none">
+<defs>
+  <filter id="sh" x="-20%" y="-20%" width="145%" height="160%" color-interpolation-filters="sRGB">
+    <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#0B2545" flood-opacity="0.14"/>
+  </filter>
+  <filter id="shs" x="-30%" y="-30%" width="160%" height="170%" color-interpolation-filters="sRGB">
+    <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#0B2545" flood-opacity="0.16"/>
+  </filter>
+</defs>
+<rect x="0" y="0" width="480" height="360" rx="28" fill="#EAF8F6" />
+
+<g filter="url(#sh)"><rect x="70" y="56" width="340" height="248" rx="16" fill="#FFFFFF" /></g>
+<rect x="70" y="56" width="340" height="34" rx="16" fill="#F3F7FA" /><rect x="70" y="74" width="340" height="16" rx="0" fill="#F3F7FA" />
+<circle cx="90" cy="73" r="4.5" fill="#F5B841" /><circle cx="106" cy="73" r="4.5" fill="#13A89E" /><circle cx="122" cy="73" r="4.5" fill="#C9D6E2" />
+<rect x="146" y="64" width="220" height="18" rx="9" fill="#FFFFFF" stroke="#DCE5EC" stroke-width="1.5"/>
+<rect x="70" y="56" width="340" height="248" rx="16" fill="none" stroke="#DCE5EC" stroke-width="1.5"/>
+<rect x="92" y="104" width="70" height="8" rx="4" fill="#0B2545" /><rect x="176" y="104" width="40" height="8" rx="4" fill="#D9E3EE" /><rect x="228" y="104" width="40" height="8" rx="4" fill="#D9E3EE" /><rect x="280" y="104" width="40" height="8" rx="4" fill="#D9E3EE" /><rect x="344" y="98" width="48" height="20" rx="10" fill="#F5B841" />
+<rect x="92" y="138" width="120" height="12" rx="6" fill="#0B2545" /><rect x="92" y="158" width="90" height="12" rx="6" fill="#0B2545" /><rect x="92" y="182" width="130" height="7" rx="3.5" fill="#D9E3EE" /><rect x="92" y="196" width="104" height="7" rx="3.5" fill="#D9E3EE" /><rect x="92" y="216" width="64" height="22" rx="11" fill="#13A89E" />
+<rect x="244" y="134" width="148" height="106" rx="12" fill="#12335C" /><circle cx="352" cy="164" r="14" fill="#F5B841" /><path d="M244 224L292 180L324 208L348 190L392 228V228C392 234 388 240 380 240H256C249 240 244 234 244 228Z" fill="#13A89E"/>
+<rect x="92" y="256" width="92" height="34" rx="8" fill="#F3F7FA" /><rect x="194" y="256" width="92" height="34" rx="8" fill="#F3F7FA" /><rect x="296" y="256" width="96" height="34" rx="8" fill="#F3F7FA" />
+<path d="M356 236L356 282L368 271L377 291L388 286L379 266L395 264Z" fill="#F5B841" stroke="#0B2545" stroke-width="3" stroke-linejoin="round"/>
+</svg>

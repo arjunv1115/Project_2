@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white font-sans text-base text-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-navy-900;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 3px solid theme('colors.teal.500');
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  ::selection {
+    background: theme('colors.amber.300');
+    color: theme('colors.navy.900');
+  }
+}
+
+@layer components {
+  /* Shared page gutter and max width. */
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+
+  /* Vertical rhythm between page sections. */
+  .section-y {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  /* Faint engineering grid used behind hero areas. */
+  .blueprint-grid {
+    background-image:
+      linear-gradient(to right, rgba(11, 37, 69, 0.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(11, 37, 69, 0.055) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
+    mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  }
+
+  .blueprint-grid-dark {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}
+
+/* Respect people who ask their device for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
